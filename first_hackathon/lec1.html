@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="froggelpop.png" type="icon">
+    <title>lecture 1</title>
+</head>
+<body>
+
+    <header>
+
+        <h1>🐸FrogglePop -- Lecture 1: Introduction to Web Development</h1><hr>
+
+        <img src="./images/lec1.png" alt="lecture1" height="600px">
+
+        <ul>
+            <li><a href="./index.html" target="_blank">🏠 Home</a></li>
+            <li><a href="./about.html" target="_blank">✨ About</a></li>
+            <li><a href="./contact.html" target="_blank">📬 Contact</a></li>
+        </ul><hr>
+
+    </header>
+
+
+    <main>
+
+        <p><h3>Welcome, Tadpoles!</h3></p>
+
+        <p>In this lecture, we’ll explore how the internet works, key networking concepts, and the basics of web development. By the end, you’ll understand how websites and data travel across the web and what it means to become a full-stack developer.</p><hr>
+
+        <h2>What is the Internet?</h2>
+
+        <p>The internet is a global network of computers and servers that communicate with each other. It allows devices to share data such as:</p>
+
+        <ul>
+            <li>Websites</li>
+            <li>Emails</li>
+            <li>BVideos</li>
+            <li>Files</li>
+        </ul><hr>
+
+        <h3>Key Points:</h3>
+
+        <ul>
+            <li>It’s not a single entity but a network of networks.</li>
+            <li>Devices connect through Internet Service Providers (ISPs).</li>
+            <li>Without the internet, websites, online games, and video calls wouldn’t exist!</li>
+        </ul><hr>
+
+        <h3>Fun Example:</h3>
+
+        <p>Think of the internet as a huge pond, where each device is a lily pad, and data is a frog hopping from pad to pad.</p><hr>
+
+        <h2>How Data Travels</h2>
+
+        <p>When you send information over the internet:</p>
+
+        <ol>
+            <li>Data is broken into packets.</li>
+            <li>Each packet travels through different paths in the network.</li>
+            <li>Packets are reassembled at the destination.</li>
+        </ol><hr>
+
+        <h3>Protocols:</h3>
+
+        <ul>
+            <li>TCP/IP: Rules that ensure packets are delivered correctly.</li>
+            <li>HTTP/HTTPS: Rules that let your browser display websites.</li>
+        </ul><hr>
+
+        <h3>Examples:</h3>
+
+        <p>Sending an email is like sending a message in small envelopes, each taking a slightly different route, then combining them at the recipient’s mailbox.</p><hr>
+
+        <h2>IP Address</h2>
+        
+        <p>An IP address is a unique number assigned to every device on the internet.</p>
+
+        <ul>
+            <li>Think of it like your home address, but for computers.</li>
+            <li>IPv4 Example: 192.168.1.1</li>
+            <li>IPv6 Example: 2001:0db8::1</li>
+        </ul><hr>
+
+        <h2>Types of IPs:</h2>
+
+        <li>Public IP: The address visible to the internet.</li>
+        <li>Private IP: Internal address used in your home or office network.</li><hr>
+
+        <h2>DNS (Domain Name System)</h2>
+
+        <p>Humans use domain names (like google.com) because they’re easier to remember than numbers.</p>
+
+        <ul>
+            <li>DNS translates domain names into IP addresses.</li>
+            <li>Without DNS, you’d need to type 172.217.14.206 instead of google.com.</li>
+        </ul><hr>
+
+        <h3>How it works:</h3>
+
+        <ol>
+            <li>You type a website name in your browser.</li>
+            <li>The request goes to a DNS server.</li>
+            <li>DNS server finds the IP and sends it back to your browser.</li>
+            <li>Your browser connects to the server using the IP and loads the website.</li>
+        </ol><hr>
+
+        <h3>Fun Frog Tip:</h3>
+
+        <p>DNS is like a friendly frog guide, helping you hop to the right lily pad!</p><hr>
+
+        <h2>MAC Address</h2>
+
+        <p>A MAC address is a unique identifier for a device’s network interface.</p>
+
+        <ul>
+            <li>Stands for Media Access Control.</li>
+            <li>Used locally in networks to identify devices.</li>
+            <li>Example: 00:1A:2B:3C:4D:5E</li>
+        </ul><hr>
+
+        <h3>Why it matters:</h3>
+
+        <p>Helps networks send data to the correct device within a LAN.</p><hr>
+
+        <h2>Port Numbers</h2>
+
+        <p>Port numbers tell a device which service should handle incoming data.</p>
+
+        <ul>
+            <li>Examples:
+                <ul>
+                    <li>Port 80 → HTTP websites</li>
+                    <li>Port 443 → HTTPS websites</li>
+            </li>
+                </ul>
+            <li>Without ports, devices wouldn’t known where to send the data.</li>
+        </ul><hr>
+
+        <h2>IPv4 vs IPv6</h2>
+
+        <ul>
+            <li>IPv4: 32-bit, limited addresses.</li>
+            <li>IPv6: 128-bit, virtually unlimited addresses.</li>
+        </ul><hr>
+
+        <h3>Why IPv6:</h3>
+
+        <ul>
+            <li>The world ran out of IPv4 addresses.</li>
+            <li>IPv6 ensures every device can have a unique IP.</li>
+        </ul><hr>
+
+        <h2>LAN, Switch, Router & VPN</h2>
+
+        <ul>
+            <li>LAN (Local Area Network): Connects devices in a small area, like a home.</li>
+            <li>Switch: Connects multiple devices in a LAN.</li>
+            <li>Router: Connects LAN to the Internet.</li>
+            <li>VPN (Virtual Private Network): Creates a secure connection over the internet.</li>
+        </ul><hr>
+
+        <h3>Fun Example:</h3>
+
+        <p>Your home Wi-Fi:</p>
+
+        <ul>
+            <li>Devices → Switch → Router → Internet <br>
+                VPN → Adds a secure “tunnel” for private access.</li>
+        </ul><hr>
+
+        <h2>Web Development Basics</h2>
+
+        <ul>
+            <li>Web Development: Creating websites and applications for the internet.</li>
+            <li>Frontend: What users see (buttons, text, images).</li>
+            <li>Backend: Server, database, and logic behind the scenes.</li>
+        </ul><hr>
+
+        <h3>MERN Stack:</h3>
+
+        <ul>
+            <li>MongoDB: Database</li>
+            <li>Express.js: Backend framework</li>
+            <li>React.js: Frontend framework</li>
+            <li>Node.js: Backend runtime environment</li>
+        </ul><hr>
+
+        <h2>Full-Stack Developer</h2>
+
+        <p>A full-stack developer can work on both frontend and backend, understanding:</p>
+
+        <ul>
+            <li>How data flows from browser to server</li>
+            <li>How to create user interfaces</li>
+            <li>How to connect databases</li>
+        </ul><hr>
+
+        <h2>🐸FrogglePop Tip</h2>
+
+        <img src="./images/lec1_3.png" alt="completion" height="400px">
+
+        <p>"Think of the Internet as a frog pond. Every frog (device) has its own spot (IP). When one frog croaks (sends data), the sound hops across the pond through ripples (packets & routers) until it reaches another frog."</p><hr>
+
+        <h2>Mini Project / Practice Ideas</h2>
+
+        <img src="./images/lec1_2.png" alt="mini projects" height="400px">
+
+        <p>To make sure you really get how the internet works, try these fun activities:</p><hr>
+
+        <h3>Project 1: Internet Journey Map</h3>
+
+        <p>Draw (on paper or digitally) the path your request takes when you type www.frogglepop.com into a browser:</p>
+
+        <ul>
+            <li>Start at the client (your device)</li>
+            <li>Pass through the DNS server</li>
+            <li>Find the IP address</li>
+            <li>Travel through routers/switches</li>
+            <li>Reach the server</li>
+            <li>Finally, display the webpage on your device</li>
+        </ul><hr>
+
+        <h3>Project 2: Packet Story</h3>
+
+        <p>Write a short “story” of a data packet traveling across the internet.</p>
+        <p>Example: “Hi, I’m Packet #12. I left the server, took a detour at Router A, zipped through Switch B, and finally reached your laptop to show you FrogglePop’s homepage!”</p><hr>
+
+        <h3>Project 3: IP Hunt</h3>
+
+        <p>Open the Command Prompt (Windows) or Terminal (Mac/Linux) and use the command:</p>
+        <p>ping www.google.com</p>
+
+        <ul>
+            <li>Note the IP address that shows up.</li>
+            <li>Try it with a few other websites.</li>
+            <li>Compare the results — notice how each site has a different IP!</li>
+        </ul><hr>
+
+        <h2>Project 4: HTTP vs HTTPS Lock</h2>
+
+        <p>Open your browser and look at the address bar of 3–4 websites.</p>
+
+        <ul>
+            <li>Which ones use HTTP and which use HTTPS?</li>
+            <li>Write down why HTTPS is safer.</li>
+        </ul><hr>
+
+        <h2>Resources</h2>
+
+        <ul>
+            <iframe src="https://youtube.com/embed/1pcikNlDB-4?si=5RMeWyEqWpUf0jTr" allowfullscreen></iframe>
+            <li><h3><a href="https://www.youtube.com/@CoderArmy9" target="_blank">CoderArmy YouTube</a></h3></li>
+            <li><h3><a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmRHeEJhQ3ZxdFUxajN0UlFzaXFKYkJvOXg5Z3xBQ3Jtc0tsbXhWVWtpY3RsM1llOG5tQnhIX0VEZjI2TXdSQXNTdEpSeFBleF9BZDRyVGQyOExMcGl0U1hOVE4yWFl1eVJzMW5ieno5QTBVNUIzOG12ckpBMkVsUUU4SXAyLTFKSWMxX1NOTGlxSC1nNjVncEFjVQ&q=https%3A%2F%2Fwww.notion.so%2FWeb-Development-Course-25b3a78e0e2280919c1ed15f0878fa15%3Fsource%3Dcopy_link&v=1pcikNlDB-4" target="_blank">Lecture 1 Docs</a></h3></li>
+        </ul><hr>
+
+    </main>
+
+    <footer>
+
+        <h2>Next Steps</h2>
+
+        <ul>
+            <li><a href="./index.html" target="_blank">🏠 Go Back to Home</a></li>
+            <li><a href="lec2.html" target="_blank">📚 Next Lecture -- Lecture 2</a></li>
+            <li><a href="./about.html" target="_blank">✨ About FrogglePop</a></li>
+            <li><a href="./contact.html" target="_blank">📬 Contact</a></li>
+        </ul><hr>
+
+        <address>
+
+            <h3>Contact Us</h3>
+
+            <ul>
+                <li>Email: <a href="frogglepop@example.com" target="_blank">frogglepop@example.com</a></li>
+                <li>Phone: <a href="+91-98765-43210" target="_blank">+91-98765-43210</a></li>
+            </ul><hr>
+
+            <h3>Follow Us</h3>
+
+            <ul>
+                <li><a href="https://www.youtube.com/@CoderArmy9" target="_blank">CoderArmy YouTube (Rohit Negi)</a></li>
+                <li><a href="https://x.com/shrya_on" target="_blank">FrogglePop Twitter</a></li>
+                <li><a href="https://instagram/FrogglePop" target="_blank">FrogglePop Instagram</a></li>
+            </ul><hr>
+
+        </address>
+
+        <h4>&copy; 2025 FrogglePop 🐸✨. All Rights Reserved. </h4>
+
+    </footer>
+    
+</body>
+</html>

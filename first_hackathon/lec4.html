@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="froggelpop.png" type="icon">
+    <title>Lecture 4</title>
+</head>
+<body>
+
+    <header>
+
+        <h1>🐸FrogglePop -- Lecture 4: File Path in HTML</h1><hr>
+
+
+        <img src="./images/lec4.png" alt="lecture 4" height="600px">
+
+        
+
+        <ul>
+            <li><a href="./index.html" target="_blank">🏠 Home</a></li>
+            <li><a href="./about.html" target="_blank">✨ About</a></li>
+            <li><a href="./contact.html" target="_blank">📬 Contact</a></li>
+        </ul><hr>
+
+    </header>
+
+    <main>
+
+        <h3>Welcome to Lecture 4!</h3>
+
+        <p>In this lecture, we’ll cover three very important parts of HTML development:</p>
+
+        <ol>
+            <li>File Paths -- how your project links images, files, and other resources.</li>
+            <li>HTML Boilerplate -- the standard starting template for any webpage.</li>
+            <li>div, class, and id -- essential building blocks for structuring your webpage.</li>
+        </ol>
+
+        <p>By mastering these, you’ll learn how to organize projects, write clean HTML, and make your pages scalable for future work.</p><hr>
+
+        <h2>File Paths in HTML</h2>
+
+        <p>When working with projects, HTML needs to know where to find images, videos, stylesheets, and scripts. That’s what file paths are for — they tell the browser where to look.</p><hr>
+
+        <h3>Types of File Paths</h3><hr>
+
+        <h4>Relative Path</h4>
+
+        <ul>
+            <li>Points to a file relative to the location of your current HTML file.</li>
+            <li>Example:
+                <br><code>&lt;img src="images/frog.png" alt="Cute Frog"></code>
+            </li>
+        </ul><hr>
+
+        <p>This means the image file is inside a folder called images in the same project directory as your HTML file.</p><hr>
+
+        <h4>When to use it?</h4>
+
+        <ul>
+            <li>Best for personal projects and websites you’ll upload later.</li>
+            <li>Makes projects portable (you can zip the folder and share it, and paths will still work).</li>
+        </ul><hr>
+
+        <h4>Absolute Path</h4>
+
+        <ul>
+            <li>A full path from your system or a complete URL from the web.</li><br>
+            <li>Example (local absolute path):
+               <br><code>&lt;img src="C:/Users/YourName/Desktop/images/frog.png" alt="Local Frog"></code>
+            </li><br>
+            <li>Example (web absolute path):
+                <br><code>&lt;img src="https://example.com/frog.png" alt="Web Frog"></code>
+            </li><br>
+            <li>Linking to resources outside your project (e.g., online images, fonts, videos).</li>
+        </ul><hr>
+
+        <h3>Key Notes:</h3>
+
+        <ul>
+            <li>Always prefer relative paths for projects → they work everywhere.</li>
+            <li>Use absolute paths only if you’re linking external content.</li>
+            <li>Keep your files organized into folders (images/, css/, js/).</li>
+        </ul><hr>
+
+        <h2>HTML Boilerplate Code</h2>
+
+        <p>The HTML Boilerplate is the skeleton or blueprint of a webpage. It ensures that your webpage is correctly structured and works well on browsers and devices.</p><hr>
+
+        <code>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html lang="en"&gt;<br>
+            &lt;head&gt;<br>
+            &lt;meta charset="UTF-8"&gt;<br>
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+            &lt;title&gt;My First Webpage&lt;/title&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;h1&gt;Hello FrogglePop&lt;/h1&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </code><hr>
+
+        <h3>Explanation of Each Part:</h3>
+
+        <ul>
+            <li>&lt;!DOCTYPE html&gt; -- Declares the document type as HTML5.</li>
+            <li>&lt;html lang="en"&gt; -- Defines the page language (English here).</li>
+            <li>&lt;head&gt; -- Stores page metadata (info about the page, not displayed on the page).</li>
+            <li>&lt;meta charset="UTF-8"&gt; -- Allows Unicode characters and non-English scripts.</li>
+            <li>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; -- Makes the page responsive (fits mobile, tablet, and desktop).</li>
+            <li>&lt;title&gt; -- Defines the tab name in the browser.</li>
+            <li>&lt;body&gt; -- Contains all visible content of the webpage.</li>
+        </ul><hr>
+
+        <h3>Why Boilerplate is important?</h3>
+
+        <p>It gives your page compatibility, ensures clean structure, and saves time when starting new projects.</p><hr>
+
+        <h2>div, class & id</h2>
+
+        <p>These three are the foundation of structuring and styling your webpage.</p><hr>
+
+        <h3>div (Division)</h3>
+
+        <ul>
+            <li>A generic container for grouping elements.</li>
+            <li>Think of it as a box where you put related content.</li>
+        </ul><hr>
+
+        <h3>Example:</h3>
+
+        <code>
+            &lt;div&gt;<br>
+            &lt;h2&gt;About Me&lt;/h2&gt;<br>
+            &lt;p&gt;I’m learning web development at FrogglePop.&lt;/p&gt;<br>
+            &lt;/div&gt;
+        </code><hr>
+
+        <h3>class</h3>
+
+        <ul>
+            <li>Groups elements together so you can apply the same style or reference them in JavaScript.</li>
+            <li>Multiple elements can share the same class.</li>
+        </ul><hr>
+
+        <h3>Example:</h3>
+
+        <code>
+            &lt;div class="note">This is a note&lt;/div&gt;<br>
+            &lt;div class="note">This is another note&lt;div&gt;
+        </code><hr>
+        
+        <h3>id</h3>
+
+        <ul>
+            <li>A unique identifier for one element only.</li>
+            <li>No two elements should share the same id.</li>
+        </ul><hr>
+
+        <h3>Example:</h3>
+
+        <p>&lt;div id="main-heading">Welcome to FrogglePop&lt;/div&gt;</p><hr>
+
+        <h3>When to Use What?</h3>
+
+        <ul>
+            <li>div -- For grouping and structuring.</li>
+            <li>class -- For repeating styles across multiple elements.</li>
+            <li>id -- For unique identification (like a login form, or main header).</li>
+        </ul><hr>
+
+        <h2>Pro Tips</h2>
+
+        <img src="./images/lec4_3.png" alt="pro tips" height="400px">
+
+        <ul>
+            <li>Keep all images in an images/ folder, scripts in js/, and styles in css/.</li>
+            <li>Use short, meaningful file names (e.g., profile-pic.png instead of img1.png).</li>
+            <li>Always start every new HTML file with a boilerplate → it saves debugging later.</li>
+            <li>Reserve id only for elements that are unique.</li>
+        </ul><hr>
+
+        <h2>Mini Project / Practical Ideas</h2>
+
+        <img src="./images/lec4_2.png" alt="mini projects" height="400px">
+
+        <p>Project: Build a Portfolio Starter Page</p><hr>
+
+        <h3>Requirements:</h3>
+
+        <ul>
+            <li>Use the HTML Boilerplate as your base.</li>
+            <li>Add a &lt;div&gt; for your About Me section.</li>
+            <li>Add another &lt;div&gt; for your Projects section.</li>
+            <li>Place an image using a relative path (e.g., inside an images/ folder).</li>
+            <li>Give your "About Me" a unique id.</li>
+            <li>Use a class for project cards.</li>
+        </ul><hr>
+
+        <h3>Example Structure:</h3>
+
+        <code>
+            &lt;div id="about-me"&gt;<br>
+            &lt;h2&gt;About Me&lt;/h2&gt;<br>
+            &lt;p&gt;Hello, I’m a beginner web developer!&lt;/p&gt;<br>
+            &lt;img src="images/profile.png" alt="Profile Picture"><br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="project"&gt;<br>
+            &lt;h3&gt;Project 1&lt;/h3&gt;<br>
+            &lt;p&gt;Description of my first project&lt;/p&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="project"&gt;<br>
+            &lt;h3&gt;Project 2&lt;/h3&gt;<br>
+            &lt;p&gt;Description of my second project&lt;/p&gt;<br>
+            &lt;/div&gt;
+        </code><hr>
+
+        <p>This will help you practice file paths, div containers, class grouping, and id uniqueness all in one go!</p><hr>
+
+        <h2>Resources</h2>
+
+        <ul>
+            <h3><iframe src="https://youtube.com/embed/k78lNSAB8VY?si=9mmM-_JJCJyDIzXN" allowfullscreen></iframe></h3>
+            <li><h3><a href="https://www.youtube.com/@CoderArmy9" target="_blank">CoderArmy YouTube</a></h3></li>
+            <li><h3><a href="https://www.notion.so/HTML-Day03-2623a78e0e2280ceaffffd21d7c450d0" target="_blank">Lecture 4 Docs</a></h3></li>
+            <li><h3><a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbVM3cFRXekFTQlY2VWhJbERsNC1kOVNrRFExQXxBQ3Jtc0tuak9iS0VuRnE1NHJzM1VSR3lDendOOEpjNFpDOXBNOV9tRk9UXzlEQXJCRGhTYnRfU0U3NXh4NWlFVk50UGJsZ3hudmFDaXFkSGxWOUM4VlEydWdYeHFrWG51VjUzYjBzRjlXYktSQnRveTU5M0s5RQ&q=https%3A%2F%2Fgithub.com%2Fcoderarmy-notes%2Fmern-stack-course&v=AJ4E1zf5tQs" target="_blank">Code Link Of The Lecture</a></h3></li>
+        </ul><hr>
+
+    </main>
+
+    <footer>
+
+        <h2>Next Steps</h2>
+
+        <ul>
+            <li><a href="./index.html" target="_blank">🏠 Go Back to Home</a></li>
+            <li><a href="lec5.html" target="_blank">📚 Next Lecture -- Lecture 5</a></li>
+            <li><a href="./about.html" target="_blank">✨ About FrogglePop</a></li>
+            <li><a href="./contact.html" target="_blank">📬 Contact</a></li>
+        </ul><hr>
+
+        <address>
+
+            <h3>Contact Us</h3>
+
+            <ul>
+                <li>Email: <a href="frogglepop@example.com" target="_blank">frogglepop@example.com</a></li>
+                <li>Phone: <a href="+91-98765-43210" target="_blank">+91-98765-43210</a></li>
+            </ul><hr>
+
+            <h3>Follow Us</h3>
+
+            <ul>
+                <li><a href="https://www.youtube.com/@CoderArmy9" target="_blank">CoderArmy YouTube (Rohit Negi)</a></li>
+                <li><a href="https://x.com/shrya_on" target="_blank">FrogglePop Twitter</a></li>
+                <li><a href="https://instagram/FrogglePop" target="_blank">FrogglePop Instagram</a></li>
+            </ul><hr>
+
+        </address>
+
+        <h4>&copy; 2025 FrogglePop 🐸✨. All Rights Reserved. </h4>
+
+    </footer>
+    
+</body>
+</html>

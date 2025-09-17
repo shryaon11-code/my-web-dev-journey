@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="froggelpop.png" type="icon">
+    <title>Lecture 6</title>
+</head>
+<body>
+
+    <header>
+
+        <h1>🐸FrogglePop -- Lecture 6: Deploy Your First Project</h1><hr>
+
+
+        <img src="./images/lec6.png" alt="lecture 6" height="600px">
+
+        
+
+        <ul>
+            <li><a href="./index.html" target="_blank">🏠 Home</a></li>
+            <li><a href="./about.html" target="_blank">✨ About</a></li>
+            <li><a href="./contact.html" target="_blank">📬 Contact</a></li>
+        </ul><hr>
+
+    </header>
+
+
+    <main>
+
+        <h3>Welcome to Lecture 6!</h3>
+
+        <p>This is a special class where you’ll bring everything together — not only learning how to add media files (video & audio) into your web pages, but also how to connect multiple pages into a proper website and finally deploy it online for the world to see.</p>
+
+        <p>By the end of this lecture, you’ll have your first live project — a website you can proudly share!</p><hr>
+
+        <h2>Media Tag in HTML</h2><hr>
+
+        <h3>&lt;video&gt; Tag</h3>
+
+        <p>The &lt;video&gt; tag is used to embed videos.</p><hr>
+
+        <h4>Example:</h4>
+
+        <code>&lt;video src="intro.mp4" controls width="400"&gt;&lt;/video&gt;</code><hr>
+
+        <ul>
+            <li>controls -- adds play, pause, volume buttons.</li>
+            <li>autoplay -- starts video automatically.</li>
+            <li>loop -- plays continuously.</li>
+            <li>muted -- starts without sound.</li>
+            <li>poster="image.jpg" -- adds a preview thumbnail before play.</li>
+        </ul><hr>
+
+        <p>Always provide multiple sources for browser compatibility:</p>
+
+        <code>
+            &lt;video controls&gt;<br>
+            &lt;source src="intro.mp4" type="video/mp4"&gt;<br>
+            &lt;source src="intro.ogg" type="video/ogg"&gt;<br>
+            Your browser does not support the video tag.<br>
+            &lt;/video&gt;
+        </code><hr>
+
+        <h2>&lt;audio&gt; Tag</h2>
+        
+        <p>The &lt;audio&gt; tag embeds sound.</p><hr>
+
+        <h4>Example:</h4>
+
+        <code>
+            &lt;audio controls&gt;<br>
+            &lt;source src="song.mp3" type="audio/mpeg"&gt;<br>
+            &lt;source src="song.ogg" type="audio/ogg"&gt;<br>
+            Your browser does not support the audio element.<br>
+            &lt;/audio&gt;
+        </code><hr>
+
+        <ul>
+            <li>controls -- shows play/pause button.</li>
+            <li>loop -- repeat the sound.</li>
+            <li>autoplay -- play automatically (use carefully).</li>
+        </ul><hr>
+
+        <p>Pro Tip: Always provide fallback text — some older browsers may not support these tags.</p><hr>
+
+        <h2>Multi-Page Website</h2>
+
+        <p>A professional website is never just one page. Instead, it has:</p>
+
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Service/ Lectures</li>
+        </ul>
+
+        <p>These pages are connected through navigation links.</p><hr>
+
+        <h3>Example Navigation Bar:</h3>
+
+        <code>
+            &lt;nav&gt;<br>
+                &lt;a href="index.html"&gt;Home&lt;/a&gt; |<br>
+                &lt;a href="about.html"&gt;About&lt;/a&gt; |<br>
+                &lt;a href="lectures.html"&gt;Lectures&lt;/a&gt; |<br>
+                &lt;a href="contact.html"&gt;Contact&lt;/a&gt;<br>
+            &lt;/nav&gt;
+        </code><hr>
+
+        <p>Best practice: Save each page with .html extension and place all in one project folder.</p><hr>
+
+        <h2>Deploying Your First Project</h2>
+
+        <h3>Netlify</h3>
+
+        <ol>
+            <li>Sign up at <a href="https://www.netlify.com/">Netlify</a></li>
+            <li>Drag and drop your project folder.</li>
+            <li>Instantly get a free live link.</li>
+        </ol>
+
+        <p>This method is free and biginner-friendly.</p><hr>
+
+        <h2>Pro Tips</h2>
+
+        <img src="./images/lec6_2.png" alt="pro tips" height="400px">
+
+        <ul>
+            <li>Always compress videos before uploading (faster site load).</li>
+            <li>Store media in a separate /media or /assets folder.</li>
+            <li>Use relative paths (media/video.mp4) instead of absolute ones.</li>
+            <li>Add captions or transcripts for accessibility.</li>
+            <li>Start using good file naming: about.html, contact.html, style.css.</li>
+        </ul><hr>
+
+        <h2>Mini Project / Practice Ideas</h2>
+
+        <img src="./images/lec6_3.png" alt="mini project" height="400px">
+
+        <p>Practice is where you level up. Try these:</p>
+
+        <ul>
+            <li>Build a 3-4 page personal portfolio:
+                <ul>
+                    <li>Home -- Your intro</li>
+                    <li>About -- Who you are</li>
+                    <li>Projects -- Showcase work</li>
+                    <li>Contact -- A form to connect</li>
+                </ul>
+            </li>
+            <li>Add a video introduction on the home page.</li>
+            <li>Add background music or a podcast clip with &lt;audio&gt;.</li>
+            <li>Deploy the entire site on GitHub Pages or Netlify and share the link!</li>
+        </ul><hr>
+
+        <h3>Homework</h3>
+
+        <ol>
+            <li>Create a multi-page website with at least 3 pages.</li>
+            <li>Add one video & one audio file.</li>
+            <li>Deploy the project on GitHub Pages / Netlify.</li>
+            <li>Share the live link with a friend for feedback.</li>
+        </ol><hr>
+
+        <img src="./images/lec6_4.png" alt="Congratulations" height="500px">
+
+        <h3>With this, you’ve completed your first deployable project. Congratulations! From here, you’re no longer just coding for yourself — the world can see your work.</h3><hr>
+
+        <h2>Resources</h2>
+
+        <ul>
+            <h3><iframe src="https://youtube.com/embed/NGYp1zCBthk?si=Uj2uIaHUrJOT7lS5" allowfullscreen></iframe></h3>
+            <li><h3><a href="https://www.youtube.com/@CoderArmy9" target="_blank">CoderArmy YouTube</a></h3></li>
+            <li><h3><a href="https://www.notion.so/HTML-MEDIA-2673a78e0e2280e7aaede039776da705" target="_blank">Lecture 6 Docs</a></h3></li>
+            <li><h3><a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbVM3cFRXekFTQlY2VWhJbERsNC1kOVNrRFExQXxBQ3Jtc0tuak9iS0VuRnE1NHJzM1VSR3lDendOOEpjNFpDOXBNOV9tRk9UXzlEQXJCRGhTYnRfU0U3NXh4NWlFVk50UGJsZ3hudmFDaXFkSGxWOUM4VlEydWdYeHFrWG51VjUzYjBzRjlXYktSQnRveTU5M0s5RQ&q=https%3A%2F%2Fgithub.com%2Fcoderarmy-notes%2Fmern-stack-course&v=AJ4E1zf5tQs" target="_blank">Code Link Of The Lecture</a></h3></li>
+            <li><h3><a href="https://docs.netlify.com/">Netlify Hosting Guide</a></h3></li>
+        </ul><hr>
+
+    </main>
+
+    <footer>
+
+        <h2>Next Steps</h2>
+
+        <ul>
+            <li><a href="./index.html" target="_blank">🏠Go Back to Home</a></li>
+            <li><a href="lec1.html" target="_blank">📚 Go Back to Lecture 1</a></li>
+            <li><a href="./about.html" target="_blank">✨ About FrogglePop</a></li>
+            <li><a href="./contact.html" target="_blank">📬 Contact</a></li>
+        </ul><hr>
+
+        <address>
+
+            <h3>Contact Us</h3>
+
+            <ul>
+                <li>Email: <a href="frogglepop@example.com" target="_blank">frogglepop@example.com</a></li>
+                <li>Phone: <a href="+91-98765-43210" target="_blank">+91-98765-43210</a></li>
+            </ul><hr>
+
+            <h3>Follow Us</h3>
+
+            <ul>
+                <li><a href="https://www.youtube.com/@CoderArmy9" target="_blank">CoderArmy YouTube (Rohit Negi)</a></li>
+                <li><a href="https://x.com/shrya_on" target="_blank">FrogglePop Twitter</a></li>
+                <li><a href="https://instagram/FrogglePop" target="_blank">FrogglePop Instagram</a></li>
+            </ul><hr>
+
+        </address>
+
+        <h4>&copy; 2025 FrogglePop 🐸✨. All Rights Reserved. </h4>
+
+    </footer>
+    
+</body>
+</html>

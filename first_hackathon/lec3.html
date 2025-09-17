@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="froggelpop.png" type="icon">
+    <title>Lecture 3</title>
+</head>
+<body>
+
+   <header>
+
+        <h1>🐸FrogglePop -- Lecture 3: HTML Nested Lists & Tables</h1><hr>
+
+        <img src="./images/lec3.png" alt="lecture 3" height="600px">
+
+        
+
+        <ul>
+            <li><a href="./index.html" target="_blank">🏠 Home</a></li>
+            <li><a href="./about.html" target="_blank">✨ About</a></li>
+            <li><a href="./contact.html" target="_blank">📬 Contact</a></li>
+        </ul><hr>
+
+    </header>
+
+   <main>
+
+        <h3>Welcome to Lecture 3!</h3>
+
+        <p>So far, you’ve learned about the basics of HTML, text formatting, links, and images. Now it’s time to dive into two powerful structures:</p>
+
+        <ul>
+            <li>Lists -- Great for organizing content, menus, or even step-by-step instructions.</li>
+            <li>Tables — Perfect for presenting structured data like schedules, product details, or comparison charts.</li>
+        </ul>
+
+        <p>This lecture will show you how to use lists (including nested lists) and tables, while teaching you real-world best practices.</p><hr>
+
+        <h2>Lists in HTML</h2>
+
+        <p>Lists help display information in a clean, organized way.</p><hr>
+
+        <ul>
+            <li>Ordered Lists &lt;ol&gt; -- Numbered lists (1, 2, 3 …).</li>
+            <li>Unordered Lists &lt;ul&gt; -- Bulleted lists.</li>
+            <li>List Item &lt;li&gt; -- Each item inside the list.</li>
+        </ul><hr>
+
+        <h3>Example:</h3>
+
+        <code>
+
+            &lt;ul&gt;<br>
+            &lt;li&gt;Fruits&lt;/li&gt;<br>
+            &lt;li&gt;Vegetables&lt;/li&gt;<br>
+            &lt;/li&gt;<br><br>
+
+            &lt;ol&gt;<br>
+            &lt;li&gt;Step 1: Open editor&lt;/li&gt;<br>
+            &lt;li&gt;Step 2: Write HTML&lt;/li&gt;<br>
+            &lt;/ol&gt;
+
+        </code><hr>
+
+        <h2>Nested Lists</h2>
+
+        <p>You can place one list inside another to create hierarchies.</p><hr>
+
+        <h3>Example:</h3>
+
+        <code>
+            &lt;ul&gt;<br>
+            &lt;li&gt;Fruits<br>
+            &lt;ul&gt;<br>
+            &lt;li&gt;Apple&lt;/li&gt;<br>
+            &lt;li&gt;Banana&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+            &lt;/li&gt;<br>
+            &lt;li&gt;Vegetables<br>
+            &lt;ul&gt;<br>
+            &lt;li&gt;Carrot&lt;/li&gt;<br>
+            &lt;li&gt;Potato&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+            &lt;/li&gt;<br>
+            &lt;/ul&gt;
+        </code><hr>
+
+        <h3>Use Cases:</h3>
+
+        <ul>
+            <li>Website navigation menus</li>
+            <li>Course outlines</li>
+            <li>FAQ categories</li>
+        </ul><hr>
+
+        <h2>Tables in HTML</h2>
+
+        <p>Tables arrange data in rows and columns.</p><hr>
+
+        <h3>Basic Structure:</h3>
+
+        <ul>
+            <li>&lt;table&gt; -- Creates the table</li>
+            <li>&lt;tr&gt; -- Table row</li>
+            <li>&lt;td&gt; -- Table data cell</li>
+            <li>&lt;th&gt; -- Table header cell</li>
+        </ul><hr>
+
+        <h3>Example:</h3>
+
+        <code>
+            &lt;table border="1"><br>
+            &lt;tr&gt;<br>
+            &lt;th&gt;Name&lt;/th&gt;<br>
+            &lt;th&gt;Age&lt;/th&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;td&gt;Froggy&lt;/td&gt;<br>
+            &lt;td&gt;5&lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;/table&gt;
+        </code><hr>
+
+        <h2>Table Sections</h2>
+
+        <p>To make tables more structured:</p><hr>
+
+        <ul>
+            <li>&lt;thead&gt; -- Table header</li>
+            <li>&lt;tbody&gt; -- Table body</li>
+            <li>&lt;tfoot&gt; -- Table footer</li>
+        </ul><hr>
+
+        <h3>Example:</h3>
+
+        <code>
+            &lt;ul border="1"><br>
+            &lt;thead&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;th&gt;Product&lt;/th&gt;<br>
+            &lt;th&gt;Price&lt;/th&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;tbody&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;td&gt;Notebook&lt;/td&gt;<br>
+            &lt;td&gt;$5&lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;/tbody&gt;<br>
+            &lt;tfoot&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;td&gt;Total&lt;/td&gt;<br>
+            &lt;td&gt;$5&lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;/tfoot&gt;<br>
+            &lt;/table&gt;
+        </code><hr>
+
+        <h2>Advanced Table Features</h2>
+
+        <ul>
+            <li>colspan -- Merge columns</li>
+            <li>rowspan -- Merge rows</li>
+        </ul><hr>
+
+        <h3>Example:</h3>
+
+        <code>
+            &lt;table border="1"><br>
+            &lt;tr&gt;<br>
+            &lt;th rowspan="2">Name&lt;/th&gt;<br>
+            &lt;th colspan="2">Scores&lt;/th&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;td&gt;Math&lt;/td&gt;<br>
+            &lt;td&gt;Science&lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;td&gt;Lily&lt;/td&gt;<br>
+            &lt;td&gt;90&lt;/td&gt;<br>
+            &lt;td&gt;95&lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;/table&gt;<br>
+        </code><hr>
+
+        <h2>Pro Tips</h2>
+
+        <img src="./images/lec3_2.png" alt="pro tips" height="400px">
+
+        <ul>
+            <li>Always use alt text for images in nested lists or menus (for accessibility).</li>
+            <li>Avoid very large tables — they are harder to read on small screens.</li>
+            <li>Keep table design minimal when using HTML only. Later, with CSS, we can make them prettier.</li>
+            <li>Nested lists are great for menus, but don’t nest too deeply (it confuses users).</li>
+        </ul><hr>
+
+        <h2>Mini Project / Practice Idea</h2>
+
+        <img src="./images/lec3_3.png" alt="mini projects" height="400px"><hr>
+
+        <p><h3>Project Idea 1:</h3>Create a Grocery List with categories and nested <br>
+            Example: Fruits -- Apple, Banana | Vegetables -- Carrot, Potato.</p><hr>
+
+        <p><h3>Project Idea 2:</h3>Make a Student Report Card Table showing names, subjects, and marks using thead, tbody, and tfoot.</p><hr>
+
+        <p><h3>Project Idea 3:</h3>Create a Course Curriculum with nested lists, and below it, a Timetable in table format.</p><hr>
+
+        <h2>Resources</h2>
+
+        <ul>
+            <h3><iframe src="https://youtube.com/embed/AJ4E1zf5tQs?si=UwTvHV5QLzW_6fnQ" allowfullscreen></iframe></h3>
+            <li><h3><a href="https://www.youtube.com/@CoderArmy9" target="_blank">CoderArmy YouTube</a></h3></li>
+            <li><h3><a href="https://www.notion.so/HTML-Hyper-Text-Markup-Language-2603a78e0e228098958fd3cbbbb540de" target="_blank">Lecture 3 Docs</a></h3></li>
+            <li><h3><a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbVM3cFRXekFTQlY2VWhJbERsNC1kOVNrRFExQXxBQ3Jtc0tuak9iS0VuRnE1NHJzM1VSR3lDendOOEpjNFpDOXBNOV9tRk9UXzlEQXJCRGhTYnRfU0U3NXh4NWlFVk50UGJsZ3hudmFDaXFkSGxWOUM4VlEydWdYeHFrWG51VjUzYjBzRjlXYktSQnRveTU5M0s5RQ&q=https%3A%2F%2Fgithub.com%2Fcoderarmy-notes%2Fmern-stack-course&v=AJ4E1zf5tQs" target="_blank">Code Link Of The Lecture</a></h3></li>
+        </ul><hr>
+
+   </main>
+
+   <footer>
+
+        <h2>Next Steps</h2>
+
+        <ul>
+            <li><a href="./index.html" target="_blank">🏠 Go Back to Home</a></li>
+            <li><a href="lec4.html" target="_blank">📚 Next Lecture -- Lecture 4</a></li>
+            <li><a href="./about.html" target="_blank">✨ About FrogglePop</a></li>
+            <li><a href="./contact.html" target="_blank">📬 Contact</a></li>
+        </ul><hr>
+
+        <address>
+
+            <h3>Contact Us</h3>
+
+            <ul>
+                <li>Email: <a href="frogglepop@example.com" target="_blank">frogglepop@example.com</a></li>
+                <li>Phone: <a href="+91-98765-43210" target="_blank">+91-98765-43210</a></li>
+            </ul><hr>
+
+            <h3>Follow Us</h3>
+
+            <ul>
+                <li><a href="https://www.youtube.com/@CoderArmy9" target="_blank">CoderArmy YouTube (Rohit Negi)</a></li>
+                <li><a href="https://x.com/shrya_on" target="_blank">FrogglePop Twitter</a></li>
+                <li><a href="https://instagram/FrogglePop" target="_blank">FrogglePop Instagram</a></li>
+            </ul><hr>
+
+        </address>
+
+        <h4>&copy; 2025 FrogglePop 🐸✨. All Rights Reserved. </h4>
+
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="froggelpop.png" type="icon">
+    <title>Lecture 2</title>
+</head>
+<body>
+
+    <header>
+
+        <h1>🐸FrogglePop -- Lecture 2: HTML Basics</h1><hr>
+
+        <img src="./images/lec2.png" alt="lecture 2" height="600px">
+
+        <ul>
+            <li><a href="./index.html" target="_blank">🏠 Home</a></li>
+            <li><a href="./about.html" target="_blank">✨ About</a></li>
+            <li><a href="./contact.html" target="_blank">📬 Contact</a></li>
+        </ul><hr>
+
+    </header>
+
+    <main>
+
+        <h3>Welcome to Lecture 2 of Web Development with FrogglePop🐸!</h3>
+
+        <p>HTML (HyperText Markup Language) is the foundation of every website. It gives structure to content, like arranging text, images, links, and media on a page. If the internet were a house, HTML would be the walls, rooms, and doors — CSS would be the paint and decoration, and JavaScript would be the electricity.</p><hr>
+
+        <h2>Structure of an HTML Document</h2>
+
+        <p>Every webpage follows a basic blueprint:</p><hr>
+
+        <code>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;meta charset="UTF-8"&gt;<br>
+            &lt;title&gt;My First Page&lt;/title&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;h1&gt;Hello FrogglePop!&lt;/h1&gt;<br>
+            &lt;p&gt;Welcome to the world of HTML.&lt;/p&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </code><hr>
+
+        <h3>Key Parts:</h3>
+
+        <ul>
+            <li>&lt;!DOCTYPE html&gt; -- Declares this is HTML5.</li>
+            <li>&lt;html&gt; -- Root element of the page.</li>
+            <li>&lt;head&gt; -- Contains info like title, metadata, SEO.</li>
+            <li>&lt;body&gt; -- Contains everything the user sees.</li>
+        </ul><hr>
+
+        <h2>Essential HTML Elements</h2><hr>
+
+        <h3>Headings</h3>
+
+        <ul>
+            <li>&lt;h1&gt; to &lt;h6&gt; define headings.</li>
+            <li>&lt;h1&gt; is the main title; use only one per page.</li>
+            <li>&lt;h1&gt; -- &lt;h6&gt; are used for subtopics.</li>
+        </ul><hr>
+
+        <h3>Example:</h3>
+
+        &lt;h1&gt;Main Title&lt;/h1&gt;<br>
+        &lt;h2&gt;Subtopic&lt;/h2&gt; <hr>
+
+        <h3>Paragraphs</h3>
+
+        <ul>
+            <li>Written using &lt;p&gt; tag.</li>
+            <li>Browsers automatically add spacing around them.</li>
+        </ul><hr>
+
+
+        <code>&lt;p&gt;This is a paragraph of text in HTML.&lt;/p&gt;</code> <hr>
+
+        <h3>Links</h3>
+
+        <ul>
+            <li>Created with the <a> (anchor) tag.</li>
+            <li>The href attribute defines the destination.</li>
+        </ul><hr>
+
+        <code>&lt;a href="https://www.youtube.com/@CoderArmy9" target="_blank">Visit CoderArmy&lt;/a&gt;</code><hr>
+
+        <h3>Images</h3>
+
+        <ul>
+            <li>Inserted with &lt;img&gt; tag.</li>
+            <li>Always include an alt attribute for accessibility.</li>
+        </ul><hr>
+
+       <code>&lt;img src="frog.png" alt="Cute FrogglePop Frog" width="200"></code><hr>
+
+       <h3>Lists</h3><hr>
+
+       <h3>Unordered List (&lt;ul&gt;) -- Bulleted</h3><hr>
+
+        <code>
+            &lt;ul&gt;<br>
+            &lt;li&gt;CSS&lt;/li&gt;<br>
+            &lt;li&gt;JavaScript&lt;/li&gt;<br>
+            &lt;ul/&gt;<br>
+        </code><hr>
+
+       <h3>Ordered List (&lt;ol&gt;) -- Numbered</h3><hr>
+
+       <code>
+            &lt;ol&gt;<br>
+            &lt;li&gt;Learn HTML&lt;/li&gt;<br>
+            &lt;li&gt;Learn CSS&lt;/li&gt;<br>
+            &lt;li&gt;Learn JS&lt;/li&gt;<br>
+            &lt;ol/&gt;
+        </code><hr>
+
+        <h2>Other Useful Tags</h2>
+
+        <ul>
+            <li>Line Break: &lt;br&gt;</li>
+            <li>Horizontal Line: &lt;hr&gt;</li>
+            <li>Bold Text: &lt;p&gt; or &lt;strong&gt;</li>
+            <li>Italic Text: &lt;i&gt; or &lt;em&gt;</li>
+            <li>Comments (not visible on page):</li>
+        </ul><hr>
+
+        <code>&lt;!-- This is a comment --&gt;</code><hr>
+
+        <h2>Attributes in HTML</h2>
+
+        <p>Attributes add extra details to tags.</p><hr>
+
+        <h3>Example:</h3>
+
+        <code>&lt;a href="page.html" target="_blank" title="Go to another page">Click Me&lt;/a&gt;</code><hr>
+
+        <ul>
+            <li>href -- Link destination.</li>
+            <li>target="_blank" -- Opens in new tab.</li>
+            <li>title -- Tooltip text.</li>
+        </ul><hr>
+
+        <h2>Best Practices for HTML</h2>
+
+        <ol>
+            <li>Use semantic tags (&lt;header&gt;, &lt;footer&gt;, &lt;article&gt;) instead of only &lt;div&gt;.</li>
+            <li>Always close your tags properly.</li>
+            <li>Keep indentation clean (2–4 spaces).</li>
+            <li>Use lowercase for tag names.</li>
+            <li>Write descriptive alt text for images.</li>
+        </ol><hr>
+
+        <h2>🐸FrogglePop Tip</h2>
+
+        <img src="./images/lec2_3.png" alt="tip" height="400px">
+
+        <p>"Think of HTML as the skeleton of a frog -- without it, the frog can’t move. Once we add CSS, it gets colors, and with JavaScript, it can jump around!"</p><hr>
+
+        <h2>Mini Project / Practice Ideas</h2>
+
+        <img src="./images/lec2_2.png" alt="mini project/ practice ideas" height="400px">
+
+        <p>Now that you know the basics, try these hands-on exercises:</p><hr>
+
+        <h3>Project 1: Personal Introduction Page</h3>
+
+        <p>Create a simple webpage with:</p>
+
+        <ul>
+            <li>Your name in &lt;h1&gt;</li>
+            <li>A short bio in &lt;p&gt;</li>
+            <li>A link to your favorite website using &lt;a&gt;</li>
+            <li>A profile picture with &lt;img&gt;</li>
+        </ul><hr>
+
+        <h3>Project 2: Daily Routine List</h3>
+
+        <p>Make a page with:</p>
+
+        <ul>
+            <li>An &lt;h2&gt; title: "My Daily Routine"</li>
+            <li>An ordered list (&lt;ol&gt;) of your daily tasks</li>
+            <li>An unordered list (&lt;ul&gt;) of your hobbies</li>
+        </ul><hr>
+
+        <h3>Project 3: FrogglePop Fun Page</h3>
+
+        <ul>
+            <li>Add a heading and a paragraph introducing FrogglePop</li>
+            <li>Insert an image of a cartoon frog</li>
+            <li>Add 2–3 links (e.g., "Learn HTML," "Subscribe to CoderArmy")</li>
+            <li>Use &lt;hr&gt; to separate sections</li>
+        </ul><hr>
+
+        <h2>Resources</h2>
+
+        <ul>
+            <iframe src="https://youtube.com/embed/GkZN_-HMCJ8?si=NHhFl6nzvxtQdBtc" allowfullscreen></iframe>
+            <li><h3><a href="https://www.youtube.com/@CoderArmy9" target="_blank">CoderArmy YouTube</a></h3></li>
+            <li><h3><a href="https://www.notion.so/HTML-Hyper-Text-Markup-Language-2603a78e0e228098958fd3cbbbb540de" target="_blank">Lecture 2 Docs</a></h3></li>
+            <li><h3><a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbkJhcW4wM3dockhIaEJIU2EyRjY2UnhWTDY1QXxBQ3Jtc0tuWVNRdVdrU3FORFNVeHVpb3FmUEVSYWpwWXRnSHNEWk5TRmtxNW91LVVTcnQyYWxOeFBvcHI3cWNNYU4wSU9YZW5QQUFlVmdycFltdjZ0eXlUNXVkdUp2T2E0a0VCMEFYMDRNMWtYZ1Vna1dxRHJ6SQ&q=https%3A%2F%2Fgithub.com%2Fcoderarmy-notes%2Fmern-stack-course&v=GkZN_-HMCJ8" target="_blank">Code Link Of The Lecture</a></h3></li>
+        </ul><hr>
+
+    </main>
+
+    <footer>
+
+        <h2>Next Steps</h2>
+
+        <ul>
+            <li><a href="./index.html" target="_blank">🏠 Go Back to Home</a></li>
+            <li><a href="lec3.html" target="_blank">📚 Next Lecture -- Lecture 3</a></li>
+            <li><a href="./about.html" target="_blank">✨ About FrogglePop</a></li>
+            <li><a href="./contact.html" target="_blank">📬 Contact</a></li>
+        </ul><hr>
+
+        <address>
+
+            <h3>Contact Us</h3>
+
+            <ul>
+                <li>Email: <a href="frogglepop@example.com" target="_blank">frogglepop@example.com</a></li>
+                <li>Phone: <a href="+91-98765-43210" target="_blank">+91-98765-43210</a></li>
+            </ul><hr>
+
+            <h3>Follow Us</h3>
+
+            <ul>
+                <li><a href="https://www.youtube.com/@CoderArmy9" target="_blank">CoderArmy YouTube (Rohit Negi)</a></li>
+                <li><a href="https://x.com/shrya_on" target="_blank">FrogglePop Twitter</a></li>
+                <li><a href="https://instagram/FrogglePop" target="_blank">FrogglePop Instagram</a></li>
+            </ul><hr>
+
+        </address>
+
+        <h4>&copy; 2025 FrogglePop 🐸✨. All Rights Reserved. </h4>
+
+    </footer>
+
+</body>
+</html>

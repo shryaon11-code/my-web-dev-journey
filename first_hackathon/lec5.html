@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="froggelpop.png" type="icon">
+    <title>Lecture 5</title>
+</head>
+<body>
+
+    <header>
+
+        <h1>🐸FrogglePop -- Lecture 5: Forms in HTML</h1><hr>
+
+
+        <img src="./images/lec5.png" alt="lecture 5" height="600px">
+
+        
+
+        <ul>
+            <li><a href="./index.html" target="_blank">🏠 Home</a></li>
+            <li><a href="./about.html" target="_blank">✨ About</a></li>
+            <li><a href="./contact.html" target="_blank">📬 Contact</a></li>
+        </ul><hr>
+
+    </header>
+
+    <main>
+
+        <h3>Welcome back, Frogglers🐸!</h3>
+
+        <p>Forms are one of the most essential parts of the web. Without them, websites would just be static pages. Forms allow users to:</p>
+
+        <ul>
+            <li>Sign up or log in</li>
+            <li>Search</li>
+            <li>Upload files</li>
+            <li>Send feedback</li>
+        </ul>
+
+        <p>In short -- Forms are how the web collects data from people.</p><hr>
+
+        <h2>What is an HTML Form?</h2>
+
+        <ul>
+            <li>An HTML form is a container for user inputs.</li>
+            <li>It groups together different input elements like text fields, checkboxes, buttons, etc.</li>
+            <li>When submitted, the data can be sent to a server or used locally (like in JavaScript).</li>
+        </ul><hr>
+
+        <h2>The &lt;form&gt; Tag</h2>
+
+        <p>The main container for any form.</p><hr>
+
+        <code>
+            &lt;form action="/submit" method="post"&gt;<br>
+            &lt;!-- form elements go here --&gt;<br>
+            &lt;/form&gt;<br>
+        </code><hr>
+
+        <ul>
+            <li>action -- the URL or file where data will be sent.</li>
+            <li>method -- how data will be sent:
+                <ul>
+                    <li>GET → appends data to the URL (visible in address bar).</li>
+                    <li>POST → sends data hidden in request body (safer for sensitive info).</li>
+                </ul>
+            </li>
+        </ul><hr>
+
+        <h3>Example:</h3>
+
+        <code>&lt;form action="register.php" method="post"&gt;</code><hr>
+
+        <h2>The &lt;input&gt; Tag</h2>
+
+        <ul>
+            <li>The most versatile element in forms.</li>
+            <li>Can accept different data types depending on the type attribute.</li>
+        </ul><hr>
+
+        <h3>Examples:</h3>
+
+        <code>
+            &lt;input type="text" name="username"&gt;<br>
+            &lt;input type="password" name="password"&gt;<br>
+            &lt;input type="email" name="email"&gt;<br>
+            &lt;input type="number" name="age"&gt;<br>
+        </code><hr>
+
+        <h2>The &lt;label&gt; Tag</h2>
+
+        <p>Labels are used to describe inputs. They improve accessibility for screen readers and allow users to click the label to focus the input.</p><hr>
+
+        <code>
+            &lt;label for="email"&gt;Email Address:&lt;/label&gt;<br>
+            &lt;input type="email" id="email" name="email"&gt;<br>
+        </code><hr>
+
+        <p>The for attribute must match the id of the input.</p><hr>
+
+        <h2>Detailed Form Structure</h2>
+
+        <p>A well-structured form should include:</p>
+
+        <ol>
+            <li>&lt;from&gt; container</li>
+            <li>&lt;label&gt; + &lt;input&gt; pairs</li>
+            <li>Grouping of related inputs (using &lt;fieldset&gt;)</li>
+            <li>Clear submit/reset buttons</li>
+        </ol><hr>
+
+        <h2>Name & Value Attributes</h2>
+
+        <ul>
+            <li>name -- identifier sent with the data.</li>
+            <li>value -- pre-filled/default data.</li>
+        </ul><hr>
+
+        <code>&lt;input type="text" name="username" value="FroggleStudent"&gt;</code><hr>
+
+        <p>When submitted -- username=FroggleStudent</p><hr>
+
+        <h2>Using the name Attribute</h2>
+
+        <ul>
+            <li>The key for storing data in backend.</li>
+            <li>Without name, the input won’t be submitted.</li>
+        </ul><hr>
+
+        <h2>Radio Buttons</h2>
+
+        <p>Used when only one option should be selected.</p><hr>
+
+        <code>
+            &lt;label&gt;&lt;input type="radio" name="gender" value="male"&gt;male&lt;/label&gt;<br>
+            &lt;label&gt;&lt;input type="radio" name="gender" value="female"&gt;female&lt;/label&gt;
+        </code><hr>
+
+        <p>All radio buttons sharing the same name behave as a group.</p><hr>
+
+        <h2>The for Attribute in Labels</h2>
+
+        <p>Links label to input:</p>
+
+        <code>
+            &lt;label for="phone"&gt;Phone:&lt;/label&gt;<br>
+            &lt;input type="tel" id="phone" name="phone"&gt;
+        </code><hr>
+
+        <p>Clicking the label selects the input field.</p><hr>
+
+        <h2>Setting Radio Button Values</h2><hr>
+
+        <code>
+            &lt;input type="radio" name="plan" value="basic"&gt; Basic  <br>
+            &lt;input type="radio" name="plan" value="premium"&gt; Premium  
+        </code><hr>
+
+        <p>When submitted, only the chosen value is sent.</p><hr>
+
+        <h2>Checkboxes</h2>
+
+        <p>Allow multiple selections.</p><hr>
+
+        <code>
+            &lt;input type="checkbox" name="skills" value="html"&gt; HTML  <br>
+            &lt;input type="checkbox" name="skills" value="css"&gt; CSS  <br>
+            &lt;input type="checkbox" name="skills" value="js"&gt; JavaScript <br> 
+        </code><hr>
+
+        <h2>Placeholder Attribute</h2>
+
+        <p>Shows a hint inside the input box.</p><hr>
+
+        <code>&lt;input type="text" name="username" placeholder="Enter your name"&gt;</code><hr>
+
+        <h2>Input Type: Date</h2>
+
+        <p>Provides a calendar picker.</p><hr>
+
+        <code>&lt;input type="date" name="dob"&gt;</code><hr>
+
+        <h2>Input Type: File</h2>
+
+        <p>Lets users upload files.</p><hr>
+
+        <code>&lt;input type="file" name="resume"&gt;</code><hr>
+
+        <h2>Input Type: Email</h2>
+
+        <p>Ensures only valid email formats.</p><hr>
+
+        <code>&lt;input type="email" name="email"&gt;</code><hr>
+
+        <h2>Input Type: Tel</h2>
+
+        <p>For telephone numbers.</p><hr>
+
+        <code>&lt;input type="tel" name="phone"&gt;</code><hr>
+
+        <h2>Textarea</h2>
+
+        <p>For multi-line input.</p><hr>
+
+        <code>&lt;textarea name="feedback" rows="4" cols="40"&gt;&lt;textarea&gt;</code><hr>
+
+        <h2>Select & Option</h2>
+
+        <p>Dropdown list.</p><hr>
+
+        <code>
+            &lt;select name="country"&gt;<br>
+            &lt;option value="india"&gt;India&lt;/option&gt;<br>
+            &lt;option value="usa"&gt;USA&lt;/option&gt;<br>
+            &lt;option value="uk"&gt;UK&lt;/option&gt;<br>
+            &lt;/select&gt;
+        </code><hr>
+
+        <h2>Buttons</h2>
+
+        <ul>
+            <li>Submit -- sends form data.</li>
+            <li>Reset -- clears form fields.</li>
+            <li>Button -- customizable (JS actions).</li>
+        </ul><hr>
+
+        <code>
+            &lt;input type="submit" value="Register"&gt;<br>
+            &lt;input type="reset" value="clear"&gt;<br>
+            &lt;button type="button"&gt;Help&lt;/button&gt; 
+        </code><hr>
+
+        <h2>Required Attribute</h2>
+
+        <p>For mandatory fields.</p><hr>
+
+        <code>&lt;input type="text" name="username" required&gt;</code><hr>
+
+        <h2>Pro Tips</h2>
+
+        <img src="./images/lec5_2.png" alt="pro tips" height="400px">
+
+        <ol>
+            <li>Always pair inputs with &lt;label&gt;.</li>
+            <li>Use semantic grouping (&lt;fieldset&gt; + &lt;legend&gt;).</li>
+            <li>Don’t overuse placeholders → keep labels clear.</li>
+            <li>For accessibility, ensure form elements are keyboard navigable.</li>
+            <li>Test forms on different browsers.</li>
+        </ol><hr>
+
+        <h2>Mini Project / Practical Ideas</h2>
+
+        <img src="./images/lec5_3.png" alt="mini project" height="400px">
+
+        <p>Build a Registration Form that includes:</p>
+
+        <ul>
+            <li>Full Name (text input)</li>
+            <li>Email (email input)</li>
+            <li>Password (password input)</li>
+            <li>Gender (radio buttons)</li>
+            <li>Skills (checkboxes)</li>
+            <li>Submit button</li>
+        </ul><hr>
+
+        <p>This small project combines most of what we’ve learned so far.</p><hr>
+
+        <ul>
+            <li>Create a Login Form with username & password.</li>
+            <li>Add required attribute to fields.</li>
+            <li>Add dropdown for country selection.</li>
+        </ul><hr>
+
+
+        <h2>Resources</h2>
+
+        <ul>
+            <h3><iframe src="https://youtube.com/embed/a4j9R_DvZ8M?si=XlF365QjmLfVZPBs" allowfullscreen></iframe></h3>
+            <li><h3><a href="https://www.youtube.com/@CoderArmy9" target="_blank">CoderArmy YouTube</a></h3></li>
+            <li><h3><a href="https://www.notion.so/Forms-in-HTML-2643a78e0e2280ddadb4c7151cfb3c5f" target="_blank">Lecture 5 Docs</a></h3></li>
+            <li><h3><a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbVM3cFRXekFTQlY2VWhJbERsNC1kOVNrRFExQXxBQ3Jtc0tuak9iS0VuRnE1NHJzM1VSR3lDendOOEpjNFpDOXBNOV9tRk9UXzlEQXJCRGhTYnRfU0U3NXh4NWlFVk50UGJsZ3hudmFDaXFkSGxWOUM4VlEydWdYeHFrWG51VjUzYjBzRjlXYktSQnRveTU5M0s5RQ&q=https%3A%2F%2Fgithub.com%2Fcoderarmy-notes%2Fmern-stack-course&v=AJ4E1zf5tQs" target="_blank">Code Link Of The Lecture</a></h3></li>
+        </ul><hr>
+
+    </main>
+
+    <footer>
+
+        <h2>Next Steps</h2>
+
+        <ul>
+            <li><a href="./index.html" target="_blank">🏠 Go Back to Home</a></li>
+            <li><a href="lec6.html" target="_blank">📚 Next Lecture -- Lecture 6</a></li>
+            <li><a href="./about.html" target="_blank">✨ About FrogglePop</a></li>
+            <li><a href="./contact.html" target="_blank">📬 Contact</a></li>
+        </ul><hr>
+
+        <address>
+
+            <h3>Contact Us</h3>
+
+            <ul>
+                <li>Email: <a href="frogglepop@example.com" target="_blank">frogglepop@example.com</a></li>
+                <li>Phone: <a href="+91-98765-43210" target="_blank">+91-98765-43210</a></li>
+            </ul><hr>
+
+            <h3>Follow Us</h3>
+
+            <ul>
+                <li><a href="https://www.youtube.com/@CoderArmy9" target="_blank">CoderArmy YouTube (Rohit Negi)</a></li>
+                <li><a href="https://x.com/shrya_on" target="_blank">FrogglePop Twitter</a></li>
+                <li><a href="https://instagram/FrogglePop" target="_blank">FrogglePop Instagram</a></li>
+            </ul><hr>
+
+        </address>
+
+        <h4>&copy; 2025 FrogglePop 🐸✨. All Rights Reserved. </h4>
+
+    </footer>
+    
+</body>
+</html>
